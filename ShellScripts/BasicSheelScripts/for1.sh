@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 
-#forloop example
+ #for loop
 
 Names=$@
-
-for Name in $Names ;
+for Name in $Names;
 do
-  #statements
-  if [[ $Name="Poo" ]];
+  if [[ $Name = "Mini" ]];
   then
     continue
     #statements
   fi
+  #statements
   echo "Hello $Name"
 done
 
-echo "for loop terminated";
+echo "For loop terminted"
 exit 0
