@@ -10,17 +10,17 @@ do
   then
     #statements
     echo "Not enough parameters passed"
-    CONTINUE
+    continue
   elif [[ ! $NAME =~ ^[A-Za-z]+$ ]];
   then
     #statements
     echo "Non alpha character detected [$NAME]"
-    CONTINUE
+    continue
   elif [[ ! $AGE =~ ^[0-9]+$ ]];
   then
     #statements
     echo "Non digit character detected [$AGE]"
-    CONTINUE
+    continue
   fi
 
 VALID=1
